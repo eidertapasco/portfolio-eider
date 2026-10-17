@@ -73,6 +73,8 @@
     --primary-foreground: 210 40% 98%;
 
     --border: 214 32% 91%;
+
+    --skill-icon-monochrome: 0 0% 9%;
   }
   .dark {
     --background: 222 47% 4%;
@@ -84,6 +86,8 @@
     --primary-foreground: 213 31% 91%;
 
     --border: 217 33% 20%;
+
+    --skill-icon-monochrome: 0 0% 100%;
   }
 
   * {
@@ -152,6 +156,25 @@
 @utility meteor {
   @apply absolute bg-linear-to-r from-white via-white to-transparent rounded-full;
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
+}
+
+/* Skill icons */
+.skill-icon {
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.skill-icon svg {
+  display: block;
+}
+
+/* Iconos monocromáticos según el tema */
+.skill-icon--monochrome {
+  color: hsl(var(--skill-icon-monochrome));
+}
+
+.skill-icon--monochrome svg {
+  color: inherit;
 }
 
 #root {
