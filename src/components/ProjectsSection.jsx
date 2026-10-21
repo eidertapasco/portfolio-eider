@@ -13,10 +13,10 @@ const projects = [
     },
     {
         id: 2,
-        title: "Kooby",
+        title: "Rydex",
         description: "An AI-powered document translator that detects what your file is about (PDF, Word, PowerPoint) and translates it using the correct terminology for that topic. Features real-time streaming translation and an inline word/phrase lookup tool.",
-        image: "/public/projects/kooby.png",
-        tags: ["TypeScript", "React", "Tailwind CSS", "Node.js", "Ollama"],
+        image: "/public/projects/Rydex.png",
+        tags: ["TypeScript", "Angular", "Tailwind CSS", "Node.js"],
         demoUrl: "#",
         githubUrl: "#",
     },
